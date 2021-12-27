@@ -1,10 +1,7 @@
 #!/bin/bash
 
-
 ## original source (heavily modified): 
 ## https://linoxide.com/check-disk-usage-is-out-of-space/
-
-result=`df -kh | grep "gallium" | awk '{ print $5 }' | sed 's/%//g'`
 
 partition=`df -kh | grep "gallium" | awk '{ print $1 }'`
 size=`df -kh | grep "gallium" | awk '{ print $2 }' | sed 's/G//g'`
