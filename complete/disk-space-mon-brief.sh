@@ -2,9 +2,9 @@
 
 ## source: https://linoxide.com/check-disk-usage-is-out-of-space/
 
-threshold="30"
+# threshold="30"
 
-i=2
+# i=2
 
 # df -kh					// list all filesystems with statistics
 # grep -v "Filesystem"		// remove line with "Filesystem" (heading)
