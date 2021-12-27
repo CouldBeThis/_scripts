@@ -12,10 +12,6 @@ i=2
 # sed 's/%//g'				// remove the "%" from values
 result=`df -kh | grep -v "Filesystem" | awk '{ print $5 }' | sed 's/%//g'`
 
-for percent in $result; do
-
-if ((percent > threshold))
-then
 
 # df -kh					// list all filesystems with statistics
 # head -$i					// strip all but first $i ( =2 ) lines
@@ -23,13 +19,7 @@ then
 # awk '{print $1}'			// remove all but 1st column (Use%)
 partition=`df -kh | head -$i | tail -1| awk '{print $1}'`
 
-echo "$partition at $(hostname -f) is ${percent}% full"
-
-fi
-
-let i=$i+1
-
-done
+# echo "$partition at $(hostname -f) is ${percent}% full"
 
 ##########################################
 
@@ -39,19 +29,12 @@ done
 # sed 's/%//g'				// remove the "%" from values
 result=`df -kh | grep "gallium" | awk '{ print $5 }' | sed 's/%//g'`
 
-
 partition=`df -kh | grep "gallium" | awk '{ print $1 }'`
-
 size=`df -kh | grep "gallium" | awk '{ print $2 }'`
-
 usedvalue=`df -kh | grep "gallium" | awk '{ print $3 }'`
-
 available=`df -kh | grep "gallium" | awk '{ print $4 }'`
-
 usedpercent=`df -kh | grep "gallium" | awk '{ print $5 }'`
-
 mountpoint=`df -kh | grep "gallium" | awk '{ print $6 }'`
-
 
 echo "------------"
 # echo "$partition"
