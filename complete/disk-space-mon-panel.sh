@@ -36,8 +36,8 @@ IconDrive=$(echo "\uf7c9")
 
 # Panel
 INFO="<txt>"
-INFO+="<span weight='Bold' fgcolor='$TextColorAccent'>"
-INFO+="${ID} "
+INFO+="<span fgcolor='$TextColor'>"
+INFO+="${ID} \uf7c9 "
 INFO+="</span>"
 # INFO+="<span foreground=\"#fb1239\">${IconDrive}</span>"
 INFO+="<span weight='Bold' fgcolor='$TextColor'>"
