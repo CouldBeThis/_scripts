@@ -1,4 +1,7 @@
 #!/bin/bash
+git add exa-sort.sh
+git commit -m "autosave $DateTimeStamp"
+clear
 
 exa -lg --time-style=long-iso --color=always \
   | sed -E 's/^ *([^ ]*) *([^ ]*) *([^ ]*) *([^ ]*) *([^ ]* *[^ ]*) *(.*)$/\1\t\3\t\4\t\2\t\5\t\6/' \
@@ -12,5 +15,4 @@ echo .
 echo .
 echo $DateTimeStamp
 
-git add exa-sort.sh
-git commit -m "autosave $DateTimeStamp"
+
