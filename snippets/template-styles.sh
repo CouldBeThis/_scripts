@@ -160,6 +160,7 @@ echo " "
 echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
 
 echo "〓〓 iTerm2 theme = Bluloco Zsh Light 〓〓"
+echo "〓〓〓 $DatePlain 〓〓〓"
 echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
 
 ## Generate the basic rainbow
