@@ -22,13 +22,15 @@ clear
 
 
 
-tput rev     # Turn on reverse video mode
-tput smso    # Enter standout (bold) mode
-tput rmso    # Exit standout mode
-
 echo "----------------------------"
 
 echo "FOREGROUND COLORS"
+
+## set tab stops to create a compact but orderly presentation
+tabs -12
+## define the flair on the left edge
+StyleSpacer="▇▓▒░"
+
 
 ## set foreground color (set a F)
 StyleFGBlack=$(tput setaf 0) #
@@ -40,18 +42,18 @@ StyleFGMagenta=$(tput setaf 5)
 StyleFGCyan=$(tput setaf 6)
 StyleFGWhite=$(tput setaf 7)
 StyleAllOff=$(tput sgr0)		## reset all attributes
-StyleSpacer="▇▓▒░"
 
-echo "	NORMAL"
-echo "$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #0	$StyleAllOff"
-echo "$StyleFGRed$StyleSpacer$StyleU\$StyleFGRed$StyleUOff	is ANSI #1	$StyleAllOff"
-echo "$StyleFGGreen$StyleSpacer$StyleU\$StyleFGGreen$StyleUOff	is ANSI #2	$StyleAllOff"
-echo "$StyleFGYellow$StyleSpacer$StyleU\$StyleFGYellow$StyleUOff	is ANSI #3	$StyleAllOff"
-echo "$StyleFGBlue$StyleSpacer$StyleU\$StyleFGBlue$StyleUOff	is ANSI #4	$StyleAllOff"
-echo "$StyleFGMagenta$StyleSpacer$StyleU\$StyleFGMagenta$StyleUOff	is ANSI #5	$StyleAllOff"
-echo "$StyleFGCyan$StyleSpacer$StyleU\$StyleFGCyan$StyleUOff	is ANSI #6	$StyleAllOff"
-echo "$StyleFGWhite$StyleSpacer$StyleU\$StyleFGWhite$StyleUOff	is ANSI #7	$StyleAllOff"
-echo "$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #8	$StyleAllOff"
+
+echo "$StyleRev$StyleU⎧NORMAL⎫$StyleUOff$StyleAllOff"
+echo "▇$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #0	$StyleAllOff"
+echo "▇$StyleFGRed$StyleSpacer$StyleU\$StyleFGRed$StyleUOff	is ANSI #1	$StyleAllOff"
+echo "▇$StyleFGGreen$StyleSpacer$StyleU\$StyleFGGreen$StyleUOff	is ANSI #2	$StyleAllOff"
+echo "▇$StyleFGYellow$StyleSpacer$StyleU\$StyleFGYellow$StyleUOff	is ANSI #3	$StyleAllOff"
+echo "▇$StyleFGBlue$StyleSpacer$StyleU\$StyleFGBlue$StyleUOff	is ANSI #4	$StyleAllOff"
+echo "▇$StyleFGMagenta$StyleSpacer$StyleU\$StyleFGMagenta$StyleUOff	is ANSI #5	$StyleAllOff"
+echo "▇$StyleFGCyan$StyleSpacer$StyleU\$StyleFGCyan$StyleUOff	is ANSI #6	$StyleAllOff"
+echo "▇$StyleFGWhite$StyleSpacer$StyleU\$StyleFGWhite$StyleUOff	is ANSI #7	$StyleAllOff"
+echo "▇$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #8	$StyleAllOff"
 
 ## set BRIGHT foreground color
 StyleFGBlack=$(tput setaf 8)
@@ -64,7 +66,8 @@ StyleFGBrCyan=$(tput setaf 14)
 StyleFGBrWhite=$(tput setaf 15)
 StyleAllOff=$(tput sgr0)		## reset all attributes
 
-echo "	BRIGHT"
+echo " "
+echo "$StyleRev$StyleU ⎡BRIGHT⎤  $StyleUOff$StyleAllOff"
 echo "$StyleFGBrRed$StyleSpacer$StyleU\$StyleFGBrRed$StyleUOff	is ANSI #9	$StyleAllOff"
 echo "$StyleFGBrGreen$StyleSpacer$StyleU\$StyleFGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
 echo "$StyleFGBrYellow$StyleSpacer$StyleU\$StyleFGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
@@ -74,11 +77,17 @@ echo "$StyleFGBrCyan$StyleSpacer$StyleU\$StyleFGBrCyan$StyleUOff	is ANSI #14	$St
 echo "$StyleFGBrWhite$StyleSpacer$StyleU\$StyleFGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
 echo "$StyleFGOff$StyleSpacer$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
 
-echo "----------------------------"
-
+echo "──────────────────────────"
+echo " "
 echo "BACKGROUND COLORS"
 
-## set foreground color (set a F)
+## set tab stops to create a compact but orderly presentation
+tabs -12
+## define the flair on the left edge
+StyleSpacer="▇▓▒░"
+
+
+## set BACKground color (set a B)
 StyleBGRed=$(tput setab 1)
 StyleBGGreen=$(tput setab 2)
 StyleBGYellow=$(tput setab 3)
@@ -89,14 +98,16 @@ StyleBGWhite=$(tput setab 7)
 StyleBGBlack=$(tput setab 8)
 StyleBGOff=$(tput setab 9)
 
+echo "$StyleRev$StyleU NORMAL ╲ $StyleUOff$StyleAllOff"
 echo "$StyleBGRed$StyleSpacer$StyleU\$StyleBGRed$StyleUOff	is ANSI #1	$StyleAllOff"
 echo "$StyleBGGreen$StyleSpacer$StyleU\$StyleBGGreen$StyleUOff	is ANSI #2	$StyleAllOff"
 echo "$StyleBGYellow$StyleSpacer$StyleU\$StyleBGYellow$StyleUOff	is ANSI #3	$StyleAllOff"
-echo "$StyleBGBlue	$StyleU\$StyleBGBlue$StyleUOff	is ANSI #4	$StyleAllOff"
-echo "$StyleBGMagenta	$StyleU\$StyleBGMagenta$StyleUOff	is ANSI #5	$StyleAllOff"
-echo "$StyleBGCyan	$StyleU\$StyleBGCyan$StyleUOff	is ANSI #6	$StyleAllOff"
-echo "$StyleBGWhite	$StyleU\$StyleBGWhite$StyleUOff	is ANSI #7	$StyleAllOff"
-echo "$StyleBGBlack	$StyleU\$StyleBGBlack$StyleUOff	is ANSI #8	$StyleAllOff"
+echo "$StyleBGBlue$StyleSpacer$StyleU\$StyleBGBlue$StyleUOff	is ANSI #4	$StyleAllOff"
+echo "$StyleBGMagenta$StyleSpacer$StyleU\$StyleBGMagenta$StyleUOff	is ANSI #5	$StyleAllOff"
+echo "$StyleBGCyan$StyleSpacer$StyleU\$StyleBGCyan$StyleUOff	is ANSI #6	$StyleAllOff"
+echo "$StyleBGWhite$StyleSpacer$StyleU\$StyleBGWhite$StyleUOff	is ANSI #7	$StyleAllOff"
+echo "$StyleBGBlack$StyleSpacer$StyleU\$StyleBGBlack$StyleUOff	is ANSI #8	$StyleAllOff"
+
 
 ## set BRIGHT background color
 StyleFGBlack=$(tput setab 8)
@@ -108,16 +119,18 @@ StyleBGBrPurple=$(tput setab 13)
 StyleBGBrCyan=$(tput setab 14)
 StyleBGBrWhite=$(tput setab 15)
 StyleAllOff=$(tput sgr0)		## reset all attributes
+tabs -14
+echo ""
 
-echo "	BRIGHT"
-echo "$StyleBGBrRed	$StyleU\$StyleBGBrRed$StyleUOff		is ANSI #9	$StyleAllOff"
-echo "$StyleBGBrGreen	$StyleU\$StyleBGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
-echo "$StyleBGBrYellow	$StyleU\$StyleBGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
-echo "$StyleBGBrBlue	$StyleU\$StyleBGBrBlue$StyleUOff	is ANSI #12	$StyleAllOff"
-echo "$StyleBGBrPurple	$StyleU\$StyleBGBrPurple$StyleUOff	is ANSI #13	$StyleAllOff"
-echo "$StyleBGBrCyan	$StyleU\$StyleBGBrCyan$StyleUOff	is ANSI #14	$StyleAllOff"
-echo "$StyleBGBrWhite	$StyleU\$StyleBGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
-echo "$StyleFGOff	$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
+echo "$StyleRev$StyleU ╰BRIGHT╮ $StyleUOff$StyleAllOff"
+echo "$StyleBGBrRed$StyleSpacer$StyleU\$StyleBGBrRed$StyleUOff	is ANSI #9	$StyleAllOff"
+echo "$StyleBGBrGreen$StyleSpacer$StyleU\$StyleBGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
+echo "$StyleBGBrYellow$StyleSpacer$StyleU\$StyleBGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
+echo "$StyleBGBrBlue$StyleSpacer$StyleU\$StyleBGBrBlue$StyleUOff	is ANSI #12	$StyleAllOff"
+echo "$StyleBGBrPurple$StyleSpacer$StyleU\$StyleBGBrPurple$StyleUOff	is ANSI #13	$StyleAllOff"
+echo "$StyleBGBrCyan$StyleSpacer$StyleU\$StyleBGBrCyan$StyleUOff	is ANSI #14	$StyleAllOff"
+echo "$StyleBGBrWhite$StyleSpacer$StyleU\$StyleBGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
+echo "$StyleFGOff$StyleSpacer$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
 
 echo "----------------------------"
 
@@ -157,12 +170,7 @@ echo "https://www.mankier.com/1/tput (not \`1p\`)"
 echo "https://stackoverflow.com/a/20983251"
 
 
-
-
-
-
-
-
+echo "----------------------------"
 
 
 
