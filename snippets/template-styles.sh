@@ -28,11 +28,11 @@ clear
 
 
 tabs -12
-echo " $StyleRev ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔	  $StyleAllOff"
+echo " $StyleRev ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ $StyleAllOff"
 # echo "  …╲╲╲ …………………………………………………………………………	╱╱╱ 			 $StyleAllOff"
 # echo " $StyleRev  ▽╱╲△ ╳△╳△╳△╳△╳△╳△╳△╳△╱╲╱╲╱╲╱゠゠゠"
-echo " $StyleRev ▒ ╳╳  ╳╳╳╳ ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳ ╳╳╳╳	 ╳╳╳ $StyleAllOff"
-echo " $StyleRev ▒ ╳╳  ╳╳ ╳╳F╳O╳R╳E╳G╳R╳O╳U╳N╳D╳ ╳╳	 ╳╳╳ $StyleAllOff"
+echo " $StyleRev ▒ ╳╳  ╳╳╳╳ ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳ ╳╳╳╳  ╳╳╳ $StyleAllOff"
+echo " $StyleRev ▒ ╳╳  ╳╳ ╳╳F╳O╳R╳E╳G╳R╳O╳U╳N╳D╳ ╳╳  ╳╳╳ $StyleAllOff"
 echo " $StyleRev ▒ ╳╳  ╳╳╳ ╳╳◆╳c╳o╳l╳o╳u╳r╳s╳◆╳ ╳╳╳  ╳╳╳ $StyleAllOff"
 echo " $StyleRev ▒ ╳╳  ╳╳╳╳ ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳ ╳╳╳╳  ╳╳╳ $StyleAllOff"
 
@@ -54,8 +54,8 @@ StyleFGCyan=$(tput setaf 6)
 StyleFGWhite=$(tput setaf 7)
 StyleAllOff=$(tput sgr0)		## reset all attributes
 
-	echo "┏━━━━━━━━━━━━━━┓"
-echo "$StyleRev ⎧NORMAL fg⎫ ▀$StyleAllOff ┗━━━━━━━━━━━━━━━━━━━━━━━━━━┓╲╲╲"
+	echo "┏━━━━━━━━━━━━━━◣"
+echo "$StyleRev ⎧NORMAL fg⎫ ▀$StyleAllOff ┗━━━━━━━━━━━━━━━━━━━━━━━━━━◣╲╲╲"
 echo "┃ ▇$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #0$StyleAllOff	▐╳╳╳"
 echo "┃ ▇$StyleFGRed$StyleSpacer$StyleU\$StyleFGRed$StyleUOff	is ANSI #1	▐╳╳╳	$StyleAllOff"
 echo "┃ ▇$StyleFGGreen$StyleSpacer$StyleU\$StyleFGGreen$StyleUOff	is ANSI #2	▐╳╳╳	$StyleAllOff"
@@ -81,7 +81,7 @@ StyleFGBrWhite=$(tput setaf 15)
 StyleAllOff=$(tput sgr0)		## reset all attributes
 
 echo " "
-echo "$StyleRev ⎡BRIGHT fg⎤ $StyleAllOff ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╮"
+echo "$StyleRev ⎡BRIGHT fg⎤ $StyleAllOff ┣╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╮"
 #															 ]
 echo "$StyleFGBrRed$StyleSpacer$StyleU\$StyleFGBrRed$StyleUOff	is ANSI #9	$StyleAllOff"
 echo "$StyleFGBrGreen$StyleSpacer$StyleU\$StyleFGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
@@ -153,8 +153,8 @@ echo "$StyleBGBrPurple$StyleSpacer$StyleU\$StyleBGBrPurple$StyleUOff	is ANSI #13
 echo "$StyleFGOff$StyleSpacer$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
 echo "$StyleBGBrWhite$StyleSpacer$StyleU\$StyleBGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
 echo "$StyleRev$StyleU ╰───────────────────────────────────────╯$StyleUOff$StyleAllOff"
-echo "▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞"
-
+# echo "▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞"
+echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
 
 ## Generate the basic rainbow
 # echo "Here is the ANSI rainbow (not reliant on declarations)"
