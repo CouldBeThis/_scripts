@@ -156,7 +156,11 @@ echo "$StyleBGBrWhite$StyleSpacer$StyleU\$StyleBGBrWhite$StyleUOff	is ANSI #15	$
 echo "$StyleFGOff$StyleSpacer$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
 echo "$StyleRev$StyleU ╰───────────────────────────────────────╯$StyleUOff$StyleAllOff"
 # echo "▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞"
-echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
+echo " "
+echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
+
+echo "〓〓 iTerm2 theme = Bluloco Zsh Light 〓〓"
+echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
 
 ## Generate the basic rainbow
 # echo "Here is the ANSI rainbow (not reliant on declarations)"
