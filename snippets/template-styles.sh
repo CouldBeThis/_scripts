@@ -1,4 +1,11 @@
 #!/bin/bash
+
+# has the most useful theme-compliant color and text style effects for terminal
+
+# echo "Useful sources:"
+# echo "https://www.mankier.com/1/tput (not \`1p\`)"
+# echo "https://stackoverflow.com/a/20983251"
+
 clear
 
 ###	Text styles
@@ -22,7 +29,9 @@ clear
 
 
 
-echo "----------------------------"
+
+	echo "$StyleRev ╳╳F╳O╳R╳E╳G╳R╳O╳U╳N╳D╳╳╳╳╳x╳x╳x╳x╳x╳X╳X╳X╳X╳☓╳☓╳☓╳☓╳☓╳-╳$StyleAllOff"
+echo "$StyleRev ╳╳ ╳╳c╳o╳l╳o╳u╳r╳s╳ ╳ ╳ ╳ ╳☓╳☓╳☓╳☓╳╳☓☓☓☓$StyleAllOff"
 
 echo "FOREGROUND COLORS"
 
@@ -43,8 +52,8 @@ StyleFGCyan=$(tput setaf 6)
 StyleFGWhite=$(tput setaf 7)
 StyleAllOff=$(tput sgr0)		## reset all attributes
 
-
-echo "$StyleRev$StyleU⎧NORMAL⎫$StyleUOff$StyleAllOff"
+	echo "┏━━━━━━━━━"
+echo "$StyleRev ⎧NORMAL fg⎫ $StyleAllOff ━━━━━━━━━━━━━━━━━━━━━━┓"
 echo "▇$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #0	$StyleAllOff"
 echo "▇$StyleFGRed$StyleSpacer$StyleU\$StyleFGRed$StyleUOff	is ANSI #1	$StyleAllOff"
 echo "▇$StyleFGGreen$StyleSpacer$StyleU\$StyleFGGreen$StyleUOff	is ANSI #2	$StyleAllOff"
@@ -67,7 +76,8 @@ StyleFGBrWhite=$(tput setaf 15)
 StyleAllOff=$(tput sgr0)		## reset all attributes
 
 echo " "
-echo "$StyleRev$StyleU ⎡BRIGHT⎤  $StyleUOff$StyleAllOff"
+echo "$StyleRev ⎡BRIGHT fg⎤ $StyleAllOff ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾┐"
+#															 ]
 echo "$StyleFGBrRed$StyleSpacer$StyleU\$StyleFGBrRed$StyleUOff	is ANSI #9	$StyleAllOff"
 echo "$StyleFGBrGreen$StyleSpacer$StyleU\$StyleFGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
 echo "$StyleFGBrYellow$StyleSpacer$StyleU\$StyleFGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
@@ -76,8 +86,10 @@ echo "$StyleFGBrPurple$StyleSpacer$StyleU\$StyleFGBrPurple$StyleUOff	is ANSI #13
 echo "$StyleFGBrCyan$StyleSpacer$StyleU\$StyleFGBrCyan$StyleUOff	is ANSI #14	$StyleAllOff"
 echo "$StyleFGBrWhite$StyleSpacer$StyleU\$StyleFGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
 echo "$StyleFGOff$StyleSpacer$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
+echo " ┖─────────────────────────────────┚"
 
-echo "──────────────────────────"
+
+
 echo " "
 echo "BACKGROUND COLORS"
 
@@ -98,7 +110,7 @@ StyleBGWhite=$(tput setab 7)
 StyleBGBlack=$(tput setab 8)
 StyleBGOff=$(tput setab 9)
 
-echo "$StyleRev$StyleU NORMAL ╲ $StyleUOff$StyleAllOff"
+echo "$StyleRev NORMAL bg╲$StyleAllOff"
 echo "$StyleBGRed$StyleSpacer$StyleU\$StyleBGRed$StyleUOff	is ANSI #1	$StyleAllOff"
 echo "$StyleBGGreen$StyleSpacer$StyleU\$StyleBGGreen$StyleUOff	is ANSI #2	$StyleAllOff"
 echo "$StyleBGYellow$StyleSpacer$StyleU\$StyleBGYellow$StyleUOff	is ANSI #3	$StyleAllOff"
@@ -122,7 +134,7 @@ StyleAllOff=$(tput sgr0)		## reset all attributes
 tabs -14
 echo ""
 
-echo "$StyleRev$StyleU ╰BRIGHT╮ $StyleUOff$StyleAllOff"
+echo "$StyleRev ╰BRIGHT bg╮ $StyleAllOff"
 echo "$StyleBGBrRed$StyleSpacer$StyleU\$StyleBGBrRed$StyleUOff	is ANSI #9	$StyleAllOff"
 echo "$StyleBGBrGreen$StyleSpacer$StyleU\$StyleBGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
 echo "$StyleBGBrYellow$StyleSpacer$StyleU\$StyleBGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
@@ -131,14 +143,15 @@ echo "$StyleBGBrPurple$StyleSpacer$StyleU\$StyleBGBrPurple$StyleUOff	is ANSI #13
 echo "$StyleBGBrCyan$StyleSpacer$StyleU\$StyleBGBrCyan$StyleUOff	is ANSI #14	$StyleAllOff"
 echo "$StyleBGBrWhite$StyleSpacer$StyleU\$StyleBGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
 echo "$StyleFGOff$StyleSpacer$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
+echo "$StyleRev$StyleU ╰───────────────────────────────────────╯$StyleUOff$StyleAllOff"
 
-echo "----------------------------"
+
 
 ## Generate the basic rainbow
 # echo "Here is the ANSI rainbow (not reliant on declarations)"
 # for (( i = 30; i < 38; i++ )); do echo -e "\033[0;"$i"m Normal: (0;$i); \033[1;"$i"m Light: (1;$i)"; done
 
-echo "----------------------------"
+
 
 echo "To see the basic 8 colors (as used by setf in urxvt terminal and setaf in xterm terminal):"
 
@@ -160,15 +173,10 @@ printf '\e[%sm ' {40..47} 0; echo           ### background
 #     color $(seq $((i*36+16)) $((i*36+51)))
 # done
 # color {232..255}
-
+# 
 echo "source: https://unix.stackexchange.com/a/269085"
 
 echo "----------------------------"
-
-echo "Useful sources:"
-echo "https://www.mankier.com/1/tput (not \`1p\`)"
-echo "https://stackoverflow.com/a/20983251"
-
 
 echo "----------------------------"
 
