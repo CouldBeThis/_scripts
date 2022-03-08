@@ -40,17 +40,18 @@ StyleFGMagenta=$(tput setaf 5)
 StyleFGCyan=$(tput setaf 6)
 StyleFGWhite=$(tput setaf 7)
 StyleAllOff=$(tput sgr0)		## reset all attributes
+StyleSpacer="▇▓▒░"
 
 echo "	NORMAL"
-echo "$StyleFGBlack	$StyleU\$StyleFGBlack$StyleUOff	is ANSI #0	$StyleAllOff"
-echo "$StyleFGRed	$StyleU\$StyleFGRed$StyleUOff	is ANSI #1	$StyleAllOff"
-echo "$StyleFGGreen	$StyleU\$StyleFGGreen$StyleUOff	is ANSI #2	$StyleAllOff"
-echo "$StyleFGYellow	$StyleU\$StyleFGYellow$StyleUOff	is ANSI #3	$StyleAllOff"
-echo "$StyleFGBlue	$StyleU\$StyleFGBlue$StyleUOff	is ANSI #4	$StyleAllOff"
-echo "$StyleFGMagenta	$StyleU\$StyleFGMagenta$StyleUOff	is ANSI #5	$StyleAllOff"
-echo "$StyleFGCyan	$StyleU\$StyleFGCyan$StyleUOff	is ANSI #6	$StyleAllOff"
-echo "$StyleFGWhite	$StyleU\$StyleFGWhite$StyleUOff	is ANSI #7	$StyleAllOff"
-echo "$StyleFGBlack	$StyleU\$StyleFGBlack$StyleUOff	is ANSI #8	$StyleAllOff"
+echo "$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #0	$StyleAllOff"
+echo "$StyleFGRed$StyleSpacer$StyleU\$StyleFGRed$StyleUOff	is ANSI #1	$StyleAllOff"
+echo "$StyleFGGreen$StyleSpacer$StyleU\$StyleFGGreen$StyleUOff	is ANSI #2	$StyleAllOff"
+echo "$StyleFGYellow$StyleSpacer$StyleU\$StyleFGYellow$StyleUOff	is ANSI #3	$StyleAllOff"
+echo "$StyleFGBlue$StyleSpacer$StyleU\$StyleFGBlue$StyleUOff	is ANSI #4	$StyleAllOff"
+echo "$StyleFGMagenta$StyleSpacer$StyleU\$StyleFGMagenta$StyleUOff	is ANSI #5	$StyleAllOff"
+echo "$StyleFGCyan$StyleSpacer$StyleU\$StyleFGCyan$StyleUOff	is ANSI #6	$StyleAllOff"
+echo "$StyleFGWhite$StyleSpacer$StyleU\$StyleFGWhite$StyleUOff	is ANSI #7	$StyleAllOff"
+echo "$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #8	$StyleAllOff"
 
 ## set BRIGHT foreground color
 StyleFGBlack=$(tput setaf 8)
@@ -64,14 +65,14 @@ StyleFGBrWhite=$(tput setaf 15)
 StyleAllOff=$(tput sgr0)		## reset all attributes
 
 echo "	BRIGHT"
-echo "▒$StyleFGBrRed ▇▓▒░	$StyleU\$StyleFGBrRed$StyleUOff	is ANSI #9	$StyleAllOff"
-echo "▒$StyleFGBrGreen ▒▒▒▒	$StyleU\$StyleFGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
-echo "▒$StyleFGBrYellow ▜▒▒▒▒	$StyleU\$StyleFGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
-echo "▒$StyleFGBrBlue ▀▒▒▒▒	$StyleU\$StyleFGBrBlue$StyleUOff	is ANSI #12	$StyleAllOff"
-echo "▒$StyleFGBrPurple ▐▒▒▒▒	$StyleU\$StyleFGBrPurple$StyleUOff	is ANSI #13	$StyleAllOff"
-echo "▒$StyleFGBrCyan ▒▒▒▒	$StyleU\$StyleFGBrCyan$StyleUOff	is ANSI #14	$StyleAllOff"
-echo "▒$StyleFGBrWhite ▒▒▒▒	$StyleU\$StyleFGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
-echo "▒$StyleFGOff ▒▒▒▒	$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
+echo "$StyleFGBrRed$StyleSpacer$StyleU\$StyleFGBrRed$StyleUOff	is ANSI #9	$StyleAllOff"
+echo "$StyleFGBrGreen$StyleSpacer$StyleU\$StyleFGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
+echo "$StyleFGBrYellow$StyleSpacer$StyleU\$StyleFGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
+echo "$StyleFGBrBlue$StyleSpacer$StyleU\$StyleFGBrBlue$StyleUOff	is ANSI #12	$StyleAllOff"
+echo "$StyleFGBrPurple$StyleSpacer$StyleU\$StyleFGBrPurple$StyleUOff	is ANSI #13	$StyleAllOff"
+echo "$StyleFGBrCyan$StyleSpacer$StyleU\$StyleFGBrCyan$StyleUOff	is ANSI #14	$StyleAllOff"
+echo "$StyleFGBrWhite$StyleSpacer$StyleU\$StyleFGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
+echo "$StyleFGOff$StyleSpacer$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
 
 echo "----------------------------"
 
@@ -88,9 +89,9 @@ StyleBGWhite=$(tput setab 7)
 StyleBGBlack=$(tput setab 8)
 StyleBGOff=$(tput setab 9)
 
-echo "$StyleBGRed	$StyleU\$StyleBGRed$StyleUOff	is ANSI #1	$StyleAllOff"
-echo "$StyleBGGreen	$StyleU\$StyleBGGreen$StyleUOff	is ANSI #2	$StyleAllOff"
-echo "$StyleBGYellow	$StyleU\$StyleBGYellow$StyleUOff	is ANSI #3	$StyleAllOff"
+echo "$StyleBGRed$StyleSpacer$StyleU\$StyleBGRed$StyleUOff	is ANSI #1	$StyleAllOff"
+echo "$StyleBGGreen$StyleSpacer$StyleU\$StyleBGGreen$StyleUOff	is ANSI #2	$StyleAllOff"
+echo "$StyleBGYellow$StyleSpacer$StyleU\$StyleBGYellow$StyleUOff	is ANSI #3	$StyleAllOff"
 echo "$StyleBGBlue	$StyleU\$StyleBGBlue$StyleUOff	is ANSI #4	$StyleAllOff"
 echo "$StyleBGMagenta	$StyleU\$StyleBGMagenta$StyleUOff	is ANSI #5	$StyleAllOff"
 echo "$StyleBGCyan	$StyleU\$StyleBGCyan$StyleUOff	is ANSI #6	$StyleAllOff"
