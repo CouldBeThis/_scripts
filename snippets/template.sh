@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-## shellcheck disable=SC2034  # "appears unused. Verify it or export it."
+
 
 ### ~~~~declarations
 ### Date stamps
@@ -11,45 +11,24 @@ clear
 	WorkingDir=$PWD
 	ThisScript=$(basename "$0")
 	CurrentUser=$(whoami)
-	## obtain width of terminal window in chars
-	TermCols=$(tput cols)
-	## obtain height of terminal window in chars
-	TermRows=$(tput lines)
-	
-
-	SomeVariable="value"
+###	Reminder
+	# SomeVariable="value"
+	# shellcheck disable=SC2034  # "appears unused. Verify it or export it."
 
 ###	Text styles
 	## Bold
 	StyleBold=$(tput smso)
 	StyleBoldOff=$(tput rmso)
-	##
 	## Reverse
 	StyleRev=$(tput rev)
-	##
 	## reset all attributes
 	StyleAllOff=$(tput sgr0)
-	##
 	## Set some colors
 	StyleFGBlue=$(tput setaf 4)		# text			= blue
 	StyleFGBrWhite=$(tput setaf 15)	# text 			= bright white
 	StyleBGWhite=$(tput setab 7)	# background	= white
 	StyleBGBlue=$(tput setab 4)		# background	= blue
 
-
-
-	for i in {1..100}
-	do
-	  echo -n '='
-	done
-	echo
-
-	echo "Cols = $TermCols"
-	for i in {1..$TermCols}
-	do
-	  echo -n '+'
-	done
-	echo
 
 
 
