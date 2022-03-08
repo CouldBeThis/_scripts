@@ -39,15 +39,6 @@ StyleFGBlue=$(tput setaf 4)
 StyleFGMagenta=$(tput setaf 5)
 StyleFGCyan=$(tput setaf 6)
 StyleFGWhite=$(tput setaf 7)
-## set BRIGHT foreground color
-StyleFGBlack=$(tput setaf 8)
-StyleFGBrRed=$(tput setaf 9)
-StyleFGBrGreen=$(tput setaf 10)
-StyleFGBrYellow=$(tput setaf 11)
-StyleFGBrBlue=$(tput setaf 12)
-StyleFGBrPurple=$(tput setaf 13)
-StyleFGBrCyan=$(tput setaf 14)
-StyleFGBrWhite=$(tput setaf 15)
 StyleAllOff=$(tput sgr0)		## reset all attributes
 
 echo "	NORMAL"
@@ -60,18 +51,27 @@ echo "$StyleFGMagenta	$StyleU\$StyleFGMagenta$StyleUOff	is ANSI #5	$StyleAllOff"
 echo "$StyleFGCyan	$StyleU\$StyleFGCyan$StyleUOff	is ANSI #6	$StyleAllOff"
 echo "$StyleFGWhite	$StyleU\$StyleFGWhite$StyleUOff	is ANSI #7	$StyleAllOff"
 echo "$StyleFGBlack	$StyleU\$StyleFGBlack$StyleUOff	is ANSI #8	$StyleAllOff"
-echo "/t BRIGHT"
-echo "$StyleFGBrRed	$StyleU\$StyleFGBrRed$StyleUOff	is ANSI #9	$StyleAllOff"
-echo "$StyleFGBrGreen	$StyleU\$StyleFGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
-echo "$StyleFGBrYellow	$StyleU\$StyleFGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
-echo "$StyleFGBrBlue	$StyleU\$StyleFGBrBlue$StyleUOff	is ANSI #12	$StyleAllOff"
-echo "$StyleFGBrPurple	$StyleU\$StyleFGBrPurple$StyleUOff	is ANSI #13	$StyleAllOff"
-echo "$StyleFGBrCyan	$StyleU\$StyleFGBrCyan$StyleUOff	is ANSI #14	$StyleAllOff"
-echo "$StyleFGBrWhite	$StyleU\$StyleFGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
 
-# echo "XXXXX	$StyleU\$XXXXX$StyleUOff	is ANSI #	$StyleAllOff"
+## set BRIGHT foreground color
+StyleFGBlack=$(tput setaf 8)
+StyleFGBrRed=$(tput setaf 9)
+StyleFGBrGreen=$(tput setaf 10)
+StyleFGBrYellow=$(tput setaf 11)
+StyleFGBrBlue=$(tput setaf 12)
+StyleFGBrPurple=$(tput setaf 13)
+StyleFGBrCyan=$(tput setaf 14)
+StyleFGBrWhite=$(tput setaf 15)
+StyleAllOff=$(tput sgr0)		## reset all attributes
 
-echo "$StyleFGOff	$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
+echo "	BRIGHT"
+echo "▒$StyleFGBrRed ▇▓▒░	$StyleU\$StyleFGBrRed$StyleUOff	is ANSI #9	$StyleAllOff"
+echo "▒$StyleFGBrGreen ▒▒▒▒	$StyleU\$StyleFGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
+echo "▒$StyleFGBrYellow ▜▒▒▒▒	$StyleU\$StyleFGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
+echo "▒$StyleFGBrBlue ▀▒▒▒▒	$StyleU\$StyleFGBrBlue$StyleUOff	is ANSI #12	$StyleAllOff"
+echo "▒$StyleFGBrPurple ▐▒▒▒▒	$StyleU\$StyleFGBrPurple$StyleUOff	is ANSI #13	$StyleAllOff"
+echo "▒$StyleFGBrCyan ▒▒▒▒	$StyleU\$StyleFGBrCyan$StyleUOff	is ANSI #14	$StyleAllOff"
+echo "▒$StyleFGBrWhite ▒▒▒▒	$StyleU\$StyleFGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
+echo "▒$StyleFGOff ▒▒▒▒	$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
 
 echo "----------------------------"
 
@@ -96,18 +96,33 @@ echo "$StyleBGMagenta	$StyleU\$StyleBGMagenta$StyleUOff	is ANSI #5	$StyleAllOff"
 echo "$StyleBGCyan	$StyleU\$StyleBGCyan$StyleUOff	is ANSI #6	$StyleAllOff"
 echo "$StyleBGWhite	$StyleU\$StyleBGWhite$StyleUOff	is ANSI #7	$StyleAllOff"
 echo "$StyleBGBlack	$StyleU\$StyleBGBlack$StyleUOff	is ANSI #8	$StyleAllOff"
-echo "$StyleBGOff	$StyleU\$StyleBGOff$StyleUOff	is ANSI #9	$StyleAllOff"
+
+## set BRIGHT background color
+StyleFGBlack=$(tput setab 8)
+StyleBGBrRed=$(tput setab 9)
+StyleBGBrGreen=$(tput setab 10)
+StyleBGBrYellow=$(tput setab 11)
+StyleBGBrBlue=$(tput setab 12)
+StyleBGBrPurple=$(tput setab 13)
+StyleBGBrCyan=$(tput setab 14)
+StyleBGBrWhite=$(tput setab 15)
+StyleAllOff=$(tput sgr0)		## reset all attributes
+
+echo "	BRIGHT"
+echo "$StyleBGBrRed	$StyleU\$StyleBGBrRed$StyleUOff		is ANSI #9	$StyleAllOff"
+echo "$StyleBGBrGreen	$StyleU\$StyleBGBrGreen$StyleUOff	is ANSI #10	$StyleAllOff"
+echo "$StyleBGBrYellow	$StyleU\$StyleBGBrYellow$StyleUOff	is ANSI #11	$StyleAllOff"
+echo "$StyleBGBrBlue	$StyleU\$StyleBGBrBlue$StyleUOff	is ANSI #12	$StyleAllOff"
+echo "$StyleBGBrPurple	$StyleU\$StyleBGBrPurple$StyleUOff	is ANSI #13	$StyleAllOff"
+echo "$StyleBGBrCyan	$StyleU\$StyleBGBrCyan$StyleUOff	is ANSI #14	$StyleAllOff"
+echo "$StyleBGBrWhite	$StyleU\$StyleBGBrWhite$StyleUOff	is ANSI #15	$StyleAllOff"
+echo "$StyleFGOff	$StyleU\$StyleAllOff$StyleUOff	is tput sgr0	$StyleAllOff"
 
 echo "----------------------------"
 
-
-
-
-
-##### text styles (see declarations)
-echo "this is ${bold}bold${normal} but this isn't"
-echo "Here is the ANSI rainbow (not reliant on declarations)"
-for (( i = 30; i < 38; i++ )); do echo -e "\033[0;"$i"m Normal: (0;$i); \033[1;"$i"m Light: (1;$i)"; done
+## Generate the basic rainbow
+# echo "Here is the ANSI rainbow (not reliant on declarations)"
+# for (( i = 30; i < 38; i++ )); do echo -e "\033[0;"$i"m Normal: (0;$i); \033[1;"$i"m Light: (1;$i)"; done
 
 echo "----------------------------"
 
