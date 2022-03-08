@@ -6,6 +6,10 @@
 # echo "https://www.mankier.com/1/tput (not \`1p\`)"
 # echo "https://stackoverflow.com/a/20983251"
 
+DateTimeStamp=$(date +"%y%m%d-%H%M%S")
+DateStamp=$(date +"%y%m%d")
+DatePlain=$(date)
+
 clear
 
 ###	Text styles
@@ -158,7 +162,7 @@ echo "$StyleRev$StyleU ╰──────────────────
 # echo "▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞"
 echo " "
 echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
-# echo "〓〓       iTerm2 theme = Ciapre      〓〓"
+# echo "〓〓       iTerm2 theme =       〓〓"
 echo "〓〓〓 $DatePlain 〓〓〓"
 echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
 
