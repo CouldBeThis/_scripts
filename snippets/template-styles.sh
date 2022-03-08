@@ -158,8 +158,7 @@ echo "$StyleRev$StyleU ╰──────────────────
 # echo "▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞"
 echo " "
 echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
-
-echo "〓〓 iTerm2 theme = Bluloco Zsh Light 〓〓"
+# echo "〓〓       iTerm2 theme = Ciapre      〓〓"
 echo "〓〓〓 $DatePlain 〓〓〓"
 echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
 
