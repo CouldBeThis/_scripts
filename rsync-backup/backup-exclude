@@ -1,0 +1,76 @@
+*~
+.android
+.AndroidStudioPreview4.1
+*.backup
+#/boot/*
+# /boot/*
+.cache/*
+CachedData
+caches
+cache/
+*/cache
+*/cache/*
+cdbuild/base
+cdbuild/images
+cdbuild/INSERT
+cdbuild/KNOPPIX
+#/dev/*
+#distros
+#/etc/mtab
+gdebi
+*gdebi*
+#go
+*gvfs*
+#/lib/*
+# /lib/*
+#/lib32/*
+# /lib32/*
+#/lib64/*
+# /lib64/*
+#list
+lost+found/*
+/mnt/*
+# /mnt/*
+#/opt/*
+# /opt/*
+.Private
+/proc/*
+.pulse-cookie
+#.python_history
+/run/*
+/run
+#.rustup/*
+#samba
+.steampath
+.steampid
+/sys/*
+*.temp
+.thumbnails*
+/tmp/*
+.Trash
+# Trash/*
+[Tt]rash*
+/usr/bin/*
+# /usr/bin/*
+/usr/lib/*
+# /usr/lib/*
+/var/tmp/*
+/var/log/*
+/var/run/*
+/var/run
+/var/lock
+/var/lock/*
+# /var/*
+/var/cache/apt/archives/*.deb
+/var/tmp/
+*/venv*
+.viminfo
+.vv_settings.txt
+.wget-hsts
+.Xauthority
+.Xclients
+.xinitrc
+.xsession-errors
+.xsession-errors.old
+
+.git
