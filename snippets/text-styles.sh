@@ -84,6 +84,8 @@ StyleFGBrCyan=$(tput setaf 14)
 StyleFGBrWhite=$(tput setaf 15)
 StyleAllOff=$(tput sgr0)		## reset all attributes
 
+
+
 echo " "
 echo "$StyleRev ⎡BRIGHT fg⎤ $StyleAllOff ┣╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╮"
 #															 ]
@@ -115,15 +117,16 @@ StyleSpacer="▇▓▒░"
 
 
 ## set BACKground color (set a B)
-StyleBGRed=$(tput setab 1)
-StyleBGGreen=$(tput setab 2)
-StyleBGYellow=$(tput setab 3)
-StyleBGBlue=$(tput setab 4)
-StyleBGMagenta=$(tput setab 5)
-StyleBGCyan=$(tput setab 6)
+StyleBGRed=$(tput setab 1)		# $StyleBGRed
+StyleBGGreen=$(tput setab 2)	# $StyleBGGreen
+StyleBGYellow=$(tput setab 3)	# $StyleBGYellow
+StyleBGBlue=$(tput setab 4)		# $StyleBGBlue
+StyleBGMagenta=$(tput setab 5)	# $StyleBGMagenta
+StyleBGCyan=$(tput setab 6)		# $StyleBGCyan
+StyleBGOff=$(tput setab 9)		# $StyleBGOff
 StyleBGWhite=$(tput setab 7)
 StyleBGBlack=$(tput setab 8)
-StyleBGOff=$(tput setab 9)
+StyleBGOff=$(tput setab 9)		# $StyleBGOff
 
 echo "▟$StyleRev ◤╱◢ NORMAL bg ◣╲◥ $StyleAllOff	▶︎ ▼ ▶︎ ▲ ▶︎ ▼ ▶︎ ▲"
 echo "$StyleBGRed$StyleSpacer$StyleU\$StyleBGRed$StyleUOff	is ANSI #1	▶︎ $StyleAllOff ▶︎"
