@@ -49,14 +49,14 @@ StyleSpacerRev="▚░▒▓"
 
 ## set foreground color (set a F)
 StyleFGBlack=$(tput setaf 0) #
-StyleFGRed=$(tput setaf 1)
-StyleFGGreen=$(tput setaf 2)
-StyleFGYellow=$(tput setaf 3)
-StyleFGBlue=$(tput setaf 4)
-StyleFGMagenta=$(tput setaf 5)
-StyleFGCyan=$(tput setaf 6)
+StyleFGRed=$(tput setaf 1)		# $StyleFGRed
+StyleFGGreen=$(tput setaf 2)	# $StyleFGGreen
+StyleFGYellow=$(tput setaf 3)	# $StyleFGYellow
+StyleFGBlue=$(tput setaf 4)		# $StyleFGBlue
+StyleFGMagenta=$(tput setaf 5)	# $StyleFGMagenta
+StyleFGCyan=$(tput setaf 6)		# $StyleFGCyan
 StyleFGWhite=$(tput setaf 7)
-StyleAllOff=$(tput sgr0)		## reset all attributes
+StyleAllOff=$(tput sgr0)		# $StyleAllOff		## reset all attributes
 
 	echo "┏━━━━━━━━━━━━━━◣"
 echo "$StyleRev ⎧NORMAL fg⎫ ▀$StyleAllOff ┗━━━━━━━━━━━━━━━━━━━━━━━━◣╲╲╲"
