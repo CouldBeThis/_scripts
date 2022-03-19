@@ -58,6 +58,17 @@ StyleFGCyan=$(tput setaf 6)		# $StyleFGCyan
 StyleFGWhite=$(tput setaf 7)
 StyleAllOff=$(tput sgr0)		# $StyleAllOff		## reset all attributes
 
+## set foreground color SHORT VARIABLE NAMES 
+Ba=$(tput setaf 0)
+R=$(tput setaf 1)
+G=$(tput setaf 2)
+Y=$(tput setaf 3)
+Bu=$(tput setaf 4)
+M=$(tput setaf 5)
+C=$(tput setaf 6)
+W=$(tput setaf 7)
+Off=$(tput sgr0)		# $StyleAllOff		## reset all attributes
+
 	echo "┏━━━━━━━━━━━━━━◣"
 echo "$StyleRev ⎧NORMAL fg⎫ ▀$StyleAllOff ┗━━━━━━━━━━━━━━━━━━━━━━━━◣╲╲╲"
 echo "┃ ▇$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #0$StyleAllOff  ▐╳╳╳"
@@ -68,20 +79,7 @@ echo "┃ ▇$StyleFGCyan$StyleSpacer$StyleU\$StyleFGCyan$StyleUOff	is ANSI #6  
 echo "┃ ▇$StyleFGBlue$StyleSpacer$StyleU\$StyleFGBlue$StyleUOff	is ANSI #4  ▐╳╳╳	$StyleAllOff"
 echo "┃ ▇$StyleFGMagenta$StyleSpacer$StyleU\$StyleFGMagenta$StyleUOff	is ANSI #5  ▐╳╳╳	$StyleAllOff"
 echo "┃ ▇$StyleFGWhite$StyleSpacer$StyleU\$StyleFGWhite$StyleUOff	is ANSI #7  ▐╳╳╳	$StyleAllOff"
-echo "┃ ▇$StyleFGBlack$StyleSpacer$StyleU\$StyleFGBlack$StyleUOff	is ANSI #8$StyleAllOff  ▐╳╳╳"
-# echo "┖───────────────────────────────────────┚╱╱╱"
-echo "┃▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟╱╱╱"
-#▙
-
-## set BRIGHT foreground color
-StyleFGBrBlack=$(tput setaf 8)
-StyleFGBrRed=$(tput setaf 9)
-StyleFGBrGreen=$(tput setaf 10)
-StyleFGBrYellow=$(tput setaf 11)
-StyleFGBrBlue=$(tput setaf 12)
-StyleFGBrPurple=$(tput setaf 13)
-StyleFGBrCyan=$(tput setaf 14)
-StyleFGBrWhite=$(tput setaf 15)
+echo "┃ ▇$StyleFGBlack$StyleSpacer$StyleU\$Style
 StyleAllOff=$(tput sgr0)		## reset all attributes
 
 
