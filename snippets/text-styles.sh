@@ -2,6 +2,10 @@
 
 # has the most useful theme-compliant color and text style effects for terminal
 
+## TODO: 
+## The way to escape is:
+## echo -e "$Var\eSoOnAndSoForth"
+
 # echo "Useful sources:"
 # echo "https://www.mankier.com/1/tput (not \`1p\`)"
 # echo "https://stackoverflow.com/a/20983251"
@@ -13,9 +17,19 @@ DatePlain=$(date)
 clear
 
 ###	Text styles
+	## Bold
+	B=$(tput smso)
+	BO=$(tput rmso)
+
+##	Underline	
+	U=$(tput smul)
+	UO=$(tput rmul)
+
+###	Text styles
 ##	Bold
 	StyleBold=$(tput smso)
 	StyleBoldOff=$(tput rmso)
+
 	
 ##	Dim	
 	StyleDim=$(tput dim)
