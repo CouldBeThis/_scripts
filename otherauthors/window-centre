@@ -5,16 +5,60 @@
 ## You can center a window using a keyboard with this script
 ## https://mxlinux.org/wiki/xfce/xfce-commands-and-other-useful-stuff/
 
-IFS='x' read screenWidth screenHeight < <(xdpyinfo | grep dimensions | grep -o '[0-9x]*' | head -n1)
+#IFS='x' read screenWidth screenHeight < <(xdpyinfo | grep dimensions | grep -o '[0-9x]*' | head -n1)
+
+### trouleshooting: output values (works)
+#echo screenWidth is $screenWidth
+#echo screenHeight is $screenHeight
+##screenWidth is 2732
+##screenHeight is 1536
+
+####### HiDPI 
+####### at 1366x768, 2x scale
+#######		*accounts for panels/decs at full only
+#######		* TODO fix later when xfwm theming is sorted
+### FULL width
+##initial_window_width		2568
+### FULL height
+##initial_window_height		1460
+### TWO THIRDS width
+##initial_window_width		1712
+### TWO THIRDS height
+##initial_window_height		973
+### HALF width
+##initial_window_width		1284
+### HALF height
+##initial_window_height		730
+### THIRD width
+##initial_window_width		856
+### THIRD height
+##initial_window_height		487
+### QUARTER width
+##initial_window_width		642
+### QUARTER height
+##initial_window_height		365
+
+#remember_window_size  no
+### THIRD width
+#initial_window_width		856
+### TWO THIRDS height
+#initial_window_height		973
+
+##width=$(xdotool getactivewindow getwindowgeometry –shell | head -4 | tail -1 | sed 's/[^0-9]*//')
+##height=$(xdotool getactivewindow getwindowgeometry –shell | head -5 | tail -1 | sed 's/[^0-9]*//')
+
+width=800
+height=800
+
+newPosX=$((screenWidth/2-width/2))
+newPosY=$((screenHeight/2-height/2))
+
+xdotool getactivewindow windowmove "$newPosX" "$newPosY"
 
 
-echo screenWidth is $screenWidth
-echo screenHeight is $screenHeight
 
-#width=$(xdotool getactivewindow getwindowgeometry –shell | head -4 | tail -1 | sed 's/[^0-9]*//')
-#height=$(xdotool getactivewindow getwindowgeometry –shell | head -5 | tail -1 | sed 's/[^0-9]*//')
 
-#newPosX=$((screenWidth/2-width/2))
-#newPosY=$((screenHeight/2-height/2))
+ 
+ 
 
-#xdotool getactivewindow windowmove "$newPosX" "$newPosY"
+
