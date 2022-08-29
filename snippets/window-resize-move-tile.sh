@@ -1,3 +1,5 @@
+###### Does not work with windows that have different ?decorations? than kitty which is what I sed to create it. Need to recreate the right way using component from https://mxlinux.org/wiki/xfce/xfce-commands-and-other-useful-stuff/
+
 ###### To obtain window geometery
 ## Position window how it should be, then enter:
 ##		$ xdotool getactivewindow getwindowgeometry
@@ -61,12 +63,12 @@
 
 #50%		Tall Left:
 xdotool getactivewindow windowmove 160 97	windowsize 1272 1431
-#50%		Tall Right:
+#50%		Tall Right: \
 xdotool getactivewindow windowmove 1450 97	windowsize 1273 1431
 #25%		Top Left:
 xdotool getactivewindow windowmove 160 97 windowsize 1272 687
-#25%		Top Right:
-xdotool getactivewindow windowmove 1450 97 windowsize 1273 687
+#25%		Top Right: \
+#xdotool getactivewindow windowmove 1450 97 windowsize 1273 687
 #25%		Bottom Left:
 xdotool getactivewindow windowmove 160 840 windowsize 1272 688
 #25%		Bottom Right:
