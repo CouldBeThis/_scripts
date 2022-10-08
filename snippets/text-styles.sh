@@ -62,6 +62,7 @@ StyleSpacerRev="▚░▒▓"
 
 
 ## set foreground color (set a F)
+##	note: abbreviated color names are at end of file
 StyleFGBlack=$(tput setaf 0) #
 StyleFGRed=$(tput setaf 1)		# $StyleFGRed
 StyleFGGreen=$(tput setaf 2)	# $StyleFGGreen
@@ -71,17 +72,6 @@ StyleFGMagenta=$(tput setaf 5)	# $StyleFGMagenta
 StyleFGCyan=$(tput setaf 6)		# $StyleFGCyan
 StyleFGWhite=$(tput setaf 7)	# $StyleFGWhite
 StyleAllOff=$(tput sgr0)		# $StyleAllOff		## reset all attributes
-
-## set foreground color SHORT VARIABLE NAMES 
-Ba=$(tput setaf 0)	## Black
-R=$(tput setaf 1)	## Red
-G=$(tput setaf 2)	## Green
-Y=$(tput setaf 3)	## Yellow
-Bu=$(tput setaf 4)	## Blue
-M=$(tput setaf 5)	## Magenta
-C=$(tput setaf 6)	## Cyan
-W=$(tput setaf 7)	## White
-Off=$(tput sgr0)	## reset all attributes
 
 	echo "┏━━━━━━━━━━━━━━◣"
 echo "$StyleRev ⎧NORMAL fg⎫ ▀$StyleAllOff ┗━━━━━━━━━━━━━━━━━━━━━━━━◣╲╲╲"
@@ -208,6 +198,51 @@ echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
 # done
 # color {232..255}
 # 
+
+
+
+
+## set foreground color SHORT VARIABLE NAMES
+Ba=$(tput setaf 0)	## Black
+R=$(tput setaf 1)	## Red
+G=$(tput setaf 2)	## Green
+Y=$(tput setaf 3)	## Yellow
+Bu=$(tput setaf 4)	## Blue
+M=$(tput setaf 5)	## Magenta
+C=$(tput setaf 6)	## Cyan
+W=$(tput setaf 7)	## White
+Off=$(tput sgr0)	## reset all attributes
+
+
+echo " $Ba Ba	====	Black$Off		Black$Off"
+echo "  $R R 	====	Red$Off		Red$Off"
+echo "  $G G 	====	Green $Off		Green $Off"
+echo "  $Y Y 	====	Yellow $Off		Yellow $Off"
+echo " $Bu Bu 	====	Blue $Off		Blue $Off"
+echo "  $M M 	====	Magenta $Off	Magenta $Off"
+echo "  $C C 	====	Cyan $Off		Cyan $Off"
+echo "  $W W 	====	White $Off		White $Off"
+echo "$Off Off	====	Off $Off		Off $Off"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
