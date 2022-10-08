@@ -17,10 +17,6 @@ DatePlain=$(date)
 clear
 
 ###	Text styles
-	## Bold
-	B=$(tput smso)
-	BO=$(tput rmso)
-
 ##	Underline	
 	U=$(tput smul)
 	UO=$(tput rmul)
@@ -29,14 +25,21 @@ clear
 ##	Bold
 	StyleBold=$(tput smso)
 	StyleBoldOff=$(tput rmso)
+## Bold (short)
+	B=$(tput smso)
+	BO=$(tput rmso)
+
 
 	
 ##	Dim	
 	StyleDim=$(tput dim)
 
-##	Underline	
+##	Underline
 	StyleU=$(tput smul)
 	StyleUOff=$(tput rmul)
+##	Underline (short)
+	U=$(tput smul)
+	UOff=$(tput rmul)
 
 ##	Reverse
 	StyleRev=$(tput rev)
