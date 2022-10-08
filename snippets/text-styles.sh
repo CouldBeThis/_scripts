@@ -69,7 +69,7 @@ StyleFGYellow=$(tput setaf 3)	# $StyleFGYellow
 StyleFGBlue=$(tput setaf 4)		# $StyleFGBlue
 StyleFGMagenta=$(tput setaf 5)	# $StyleFGMagenta
 StyleFGCyan=$(tput setaf 6)		# $StyleFGCyan
-StyleFGWhite=$(tput setaf 7)
+StyleFGWhite=$(tput setaf 7)	# $StyleFGWhite
 StyleAllOff=$(tput sgr0)		# $StyleAllOff		## reset all attributes
 
 ## set foreground color SHORT VARIABLE NAMES 
