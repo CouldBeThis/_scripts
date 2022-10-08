@@ -73,15 +73,15 @@ StyleFGWhite=$(tput setaf 7)
 StyleAllOff=$(tput sgr0)		# $StyleAllOff		## reset all attributes
 
 ## set foreground color SHORT VARIABLE NAMES 
-Ba=$(tput setaf 0)
-R=$(tput setaf 1)
-G=$(tput setaf 2)
-Y=$(tput setaf 3)
-Bu=$(tput setaf 4)
-M=$(tput setaf 5)
-C=$(tput setaf 6)
-W=$(tput setaf 7)
-Off=$(tput sgr0)		# $StyleAllOff		## reset all attributes
+Ba=$(tput setaf 0)	## Black
+R=$(tput setaf 1)	## Red
+G=$(tput setaf 2)	## Green
+Y=$(tput setaf 3)	## Yellow
+Bu=$(tput setaf 4)	## Blue
+M=$(tput setaf 5)	## Magenta
+C=$(tput setaf 6)	## Cyan
+W=$(tput setaf 7)	## White
+Off=$(tput sgr0)	## reset all attributes
 
 	echo "┏━━━━━━━━━━━━━━◣"
 echo "$StyleRev ⎧NORMAL fg⎫ ▀$StyleAllOff ┗━━━━━━━━━━━━━━━━━━━━━━━━◣╲╲╲"
