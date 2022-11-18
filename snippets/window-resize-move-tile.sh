@@ -1,5 +1,10 @@
 ###### Does not work with windows that have different ?decorations? than kitty which is what I sed to create it. Need to recreate the right way using component from https://mxlinux.org/wiki/xfce/xfce-commands-and-other-useful-stuff/
 
+### !!
+### !! project moving to
+### !! github.com:CouldBeThis/windowtiling.git
+### !!
+
 ###### To obtain window geometery
 ## Position window how it should be, then enter:
 ##		$ xdotool getactivewindow getwindowgeometry
