@@ -1,0 +1,8 @@
+#!/bin/bash
+clear
+
+## Find the XFWM/XFCE4 theme (in Window Manager panel)
+XfwmTheme=$(xfconf-dump | grep "/general/theme" | sed "s/    \"\/general\/theme\": //g")
+
+## reload the XFWM theme
+xfconf-query -c xfwm4 -p /general/theme -s $XfwmTheme

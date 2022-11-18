@@ -1,0 +1,32 @@
+#!/bin/bash
+clear
+
+## Find the GTK Theme (set in Appearance panel)
+GtkTheme=$(xfconf-dump | grep "/Net/ThemeName" | sed "s/    \"\/Net\/ThemeName\": //g")
+
+## required to unset the theme prior to setting it or else no action will be taken
+## resetting and setting do not seem to be combinable
+xfconf-query -c xsettings -p /Net/ThemeName -r
+xfconf-query -c xsettings -p /Net/ThemeName -s $GtkTheme
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

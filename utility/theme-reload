@@ -1,0 +1,86 @@
+#!/bin/bash
+clear
+
+
+### ~~~~declarations
+### Date stamps
+	DateTimeStamp=$(date +"%y%m%d-%H%M%S")
+	DateStamp=$(date +"%y%m%d")
+	DatePlain=$(date)
+###	Metadata 
+	WorkingDir=$PWD
+	ThisScript=$(basename "$0")
+	CurrentUser=$(whoami)
+###	Reminder
+	# SomeVariable="value"
+	# shellcheck disable=SC2034  # "appears unused. Verify it or export it."
+
+###	Text styles
+	## Bold
+	B=$(tput smso)
+	BOff=$(tput rmso)
+	## Reverse
+	Rev=$(tput rev)
+	## reset all attributes
+	AllOff=$(tput sgr0)
+	## Set some colors
+	FGBlue=$(tput setaf 4)		# text			= blue
+	FGBrWhite=$(tput setaf 15)	# text 			= bright white
+	BGWhite=$(tput setab 7)	# background	= white
+	BGBlue=$(tput setab 4)		# background	= blue
+
+## Find the GTK Theme (set in Appearance panel)
+GtkTheme=$(xfconf-dump | grep "/Net/ThemeName" | sed "s/    \"\/Net\/ThemeName\": //g")
+
+## Find the XFWM/XFCE4 theme (in Window Manager panel)
+XfwmTheme=$(xfconf-dump | grep "/general/theme" | sed "s/    \"\/general\/theme\": //g")
+
+tabs -8
+echo " "
+echo "$Rev ⎡Current themes⎤ $AllOff ┠────────────────────────────────────╖"
+echo "┃ $BGBlue$Spacer$U$UOff▶︎ $AllOff The GTK theme is:$B$FGBlue$UOff	$GtkTheme	$AllOff		║"
+echo "┃ $BGBlue$Spacer$U$UOff▶︎ $AllOff The XFWM theme is:$B$FGBlue$UOff	$XfwmTheme	$AllOff	║"
+echo "┣═══════════════════════════════════════════════════════╝"
+
+## required to unset the theme prior to setting it or else no action will be taken
+## resetting and setting do not seem to be combinable
+xfconf-query -c xsettings -p /Net/ThemeName -r
+xfconf-query -c xsettings -p /Net/ThemeName -s $GtkTheme
+
+## reload the XFWM theme
+xfconf-query -c xfwm4 -p /general/theme -s $XfwmTheme
+# xfconf-query -c xfwm4 -p /general/theme -s
+
+echo "================ S T A T U S ================="
+xfconf-dump | grep "/Net/ThemeName" | sed "s/    \"\/Net\/ThemeName\": //g"
+
+xfconf-dump | grep "/general/theme" | sed "s/    \"\/general\/theme\": //g"
+
+echo " "
+echo "$Rev ⎡Update⎤ $AllOff ┠────────────────────────────────────────────╖"
+echo "┃ $Rev$Spacer$U$UOff▶︎ $AllOff The GTK theme is:$FGBrWhite$UOff	$GtkTheme	$AllOff		║"
+echo "┃ $Rev$Spacer$U$UOff▶︎ $AllOff The XFWM theme is:$FGBrWhite$UOff	$XfwmTheme	$AllOff	║"
+echo "┣═══════════════════════════════════════════════════════╝"
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
