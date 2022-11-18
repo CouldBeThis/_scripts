@@ -2,7 +2,7 @@
 
 ### !!
 ### !! project moving to
-### !! github.com:CouldBeThis/windowtiling.git
+### !! github.com:CouldBeThis/windowtiling.gitx
 ### !!
 
 ###### To obtain window geometery
