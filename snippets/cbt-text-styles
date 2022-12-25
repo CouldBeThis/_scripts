@@ -199,19 +199,6 @@ echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
 
 
 
-
-## set foreground color SHORT VARIABLE NAMES
-bk=$(tput setaf 0)	## Black
-R=$(tput setaf 1)	## Red
-G=$(tput setaf 2)	## Green
-Y=$(tput setaf 3)	## Yellow
-Bu=$(tput setaf 4)	## Blue
-M=$(tput setaf 5)	## Magenta
-C=$(tput setaf 6)	## Cyan
-W=$(tput setaf 7)	## White
-Off=$(tput sgr0)	## reset all attributes
-
-
 echo " $bk bk	====	Black$oo		Black$oo"
 echo "  $r r 	====	Red$oo		Red$oo"
 echo "  $g g 	====	Green $oo		Green $oo"
