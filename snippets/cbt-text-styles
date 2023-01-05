@@ -150,66 +150,78 @@ bgcbr=$(tput setab 14)
 bgwbr=$(tput setab 15)
 oo=$(tput sgr0)		## reset all attributes
 tabs -14
-echo ""
-
-echo "$rev ╰ BRIGHT bg ╮ $oo __________________________"
-echo "$bgrbr$StyleSpacer$u\$bgrbr$uo	is ANSI #9	$oo "
-echo "$bgybr$StyleSpacer$u\$bgybr$uo	is ANSI #11	$oo"
-echo "$bggbr$StyleSpacer$u\$bggbr$uo	is ANSI #10	$oo"
-echo "$bgcbr$StyleSpacer$u\$bgcbr$uo	is ANSI #14	$oo"
-echo "$bgblbr$StyleSpacer$u\$bgblbr$uo	is ANSI #12	$oo"
-echo "$bgpbr$StyleSpacer$u\$bgpbr$uo	is ANSI #13	$oo"
-echo "$bgwbr$StyleSpacer$u\$bgwbr$uo	is ANSI #15	$oo"
-echo "$oo$StyleSpacer$u\$oo$uo	is tput sgr0	$oo"
-echo "$rev$u ╰───────────────────────────────────────╯$uo$oo"
-# echo "▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞"
-echo " "
-echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
-# echo "〓〓       iTerm2 theme =       〓〓"
-echo "〓〓〓 $DatePlain 〓〓〓"
-echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
-
-## Generate the basic rainbow
-# echo "Here is the ANSI rainbow (not reliant on declarations)"
-# for (( i = 30; i < 38; i++ )); do echo -e "\033[0;"$i"m Normal: (0;$i); \033[1;"$i"m Light: (1;$i)"; done
-
-
-
-# echo "To see the basic 8 colors (as used by setf in urxvt terminal and setaf in xterm terminal):"
-# printf '\e[%sm▒' {30..37} 0; echo           ### foreground
-# printf '\e[%sm ' {40..47} 0; echo           ### background
-
-# echo "To see the extended 256 colors (as used by setaf in urxvt):"
-# echo "source: https://unix.stackexchange.com/a/269085"
+# echo ""
 #
-# color(){
-#     for c; do
-#         printf '\e[48;5;%dm%03d' $c $c
-#     done
-#     printf '\e[0m \n'
-# }
+# echo "$rev ╰ BRIGHT bg ╮ $oo __________________________"
+# echo "$bgrbr$StyleSpacer$u\$bgrbr$uo	is ANSI #9	$oo "
+# echo "$bgybr$StyleSpacer$u\$bgybr$uo	is ANSI #11	$oo"
+# echo "$bggbr$StyleSpacer$u\$bggbr$uo	is ANSI #10	$oo"
+# echo "$bgcbr$StyleSpacer$u\$bgcbr$uo	is ANSI #14	$oo"
+# echo "$bgblbr$StyleSpacer$u\$bgblbr$uo	is ANSI #12	$oo"
+# echo "$bgpbr$StyleSpacer$u\$bgpbr$uo	is ANSI #13	$oo"
+# echo "$bgwbr$StyleSpacer$u\$bgwbr$uo	is ANSI #15	$oo"
+# echo "$oo$StyleSpacer$u\$oo$uo	is tput sgr0	$oo"
+# echo "$rev$u ╰───────────────────────────────────────╯$uo$oo"
+# # echo "▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞ ▞"
+# echo " "
+# echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
+# # echo "〓〓       iTerm2 theme =       〓〓"
+# echo "〓〓〓 $DatePlain 〓〓〓"
+# echo "〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓"
 #
-# IFS=$' \t\n'
-# color {0..15}
-# for ((i=0;i<6;i++)); do
-#     color $(seq $((i*36+16)) $((i*36+51)))
-# done
-# color {232..255}
-# 
+# ## Generate the basic rainbow
+# # echo "Here is the ANSI rainbow (not reliant on declarations)"
+# # for (( i = 30; i < 38; i++ )); do echo -e "\033[0;"$i"m Normal: (0;$i); \033[1;"$i"m Light: (1;$i)"; done
+#
+#
+#
+# # echo "To see the basic 8 colors (as used by setf in urxvt terminal and setaf in xterm terminal):"
+# # printf '\e[%sm▒' {30..37} 0; echo           ### foreground
+# # printf '\e[%sm ' {40..47} 0; echo           ### background
+#
+# # echo "To see the extended 256 colors (as used by setaf in urxvt):"
+# # echo "source: https://unix.stackexchange.com/a/269085"
+# #
+# # color(){
+# #     for c; do
+# #         printf '\e[48;5;%dm%03d' $c $c
+# #     done
+# #     printf '\e[0m \n'
+# # }
+# #
+# # IFS=$' \t\n'
+# # color {0..15}
+# # for ((i=0;i<6;i++)); do
+# #     color $(seq $((i*36+16)) $((i*36+51)))
+# # done
+# # color {232..255}
+#
+#
+# echo " $bk bk	====	Black$oo		Black$oo"
+# echo "  $r r 	====	Red$oo		Red$oo"
+# echo "  $g g 	====	Green $oo		Green $oo"
+# echo "  $y y 	====	Yellow $oo		Yellow $oo"
+# echo " $bl bl 	====	Blue $oo		Blue $oo"
+# echo "  $m m 	====	Magenta $oo	Magenta $oo"
+# echo "  $c c 	====	Cyan $oo		Cyan $oo"
+# echo "  $w w 	====	White $oo		White $oo"
+# echo "$oo oo	====	Off $oo		Off $oo"
+#
 
+### Functions
+	## print horizontal rule
+	hr() {
+		hr="───────────────────────────────────────"
+		echo $hr
+	}
+	hr #.............
 
-
-echo " $bk bk	====	Black$oo		Black$oo"
-echo "  $r r 	====	Red$oo		Red$oo"
-echo "  $g g 	====	Green $oo		Green $oo"
-echo "  $y y 	====	Yellow $oo		Yellow $oo"
-echo " $bl bl 	====	Blue $oo		Blue $oo"
-echo "  $m m 	====	Magenta $oo	Magenta $oo"
-echo "  $c c 	====	Cyan $oo		Cyan $oo"
-echo "  $w w 	====	White $oo		White $oo"
-echo "$oo oo	====	Off $oo		Off $oo"
-
-
+	## print horizontal rule
+	hr01() {
+		hr="╰───────────────────────────────────────╯"
+		echo $hr01
+	}
+	hr01 #.............
 
 
 
