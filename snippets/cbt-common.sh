@@ -1,7 +1,11 @@
 ## this file has variable shared between scripts
 
 # ###################### HOW TO USE ######################
-# ## If script is to be run from outside of the actual directory where it lives, it will not be able to find the sourced file.
+# ## ** use BASH. `source` does not work in `sh` and maybe  other
+# ## langauges.
+# ##
+# ## If script is to be run from outside of the actual directory
+# ## where it lives, it will not be able to find the sourced file.
 # ## So need to make sure bash knows where to find the file.
 # ## If other problems encoutnered, see the file itself for more
 # ## information and possiblities
