@@ -54,5 +54,22 @@ for x in *.xml; do
 done
 
 
+##################################
+echo "$u	Only directories	$uo"
+
+for MagnificationLevel in */; do
+  echo "$g	*** *** $MagnificationLevel	*** *** $bl"
+#   cd $MagnificationLevel
+#   ls -1 #| xargs -I @ ln -s $PWD/@ $ThemeDestDir/$Scale-@
+done
+
+
+echo "$u	All files	$uo"
+for MagnificationLevel in *; do
+#   echo "File -> $MagnificationLevel"
+  echo "$c	*** *** $MagnificationLevel	*** *** $bl"
+  #   cd $MagnificationLevel
+done
+
 
 
